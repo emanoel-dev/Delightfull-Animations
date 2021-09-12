@@ -1,0 +1,18 @@
+@media (max-width: 768px) {
+    body {
+        font-size: .5rem;
+    }
+    html {
+        display: flex;
+        justify-content: center;
+    }
+    .social-media {
+        flex-direction: column;
+    }
+    .social-media a{
+        margin: 5px;
+    }
+    .box-card {
+        flex-direction: column;
+    }
+}
