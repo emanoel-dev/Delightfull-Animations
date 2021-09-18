@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('../DevChallange/media.css');
 
-
+html{
+    scroll-behavior: smooth;
+} 
 body {
     margin: 0;
     padding: 0;
@@ -10,7 +13,8 @@ body {
 .head {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(45deg, #050404, #2E1C2B, #110342, #0863ad);
+    background: linear-gradient(
+45deg, #050404, #2E1C2B, #110342, #0863ad);
     background-size: 400% 400%;
     display: flex;
     flex-direction: column;
@@ -24,13 +28,22 @@ h1 {
     letter-spacing: 4px;
     margin-bottom: 2rem;
     font-size: 40px;
-    color: #fff;
+    color: var(--white);
 }
 h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: 1rem;
-    color: #fff;
+    color: var(--white);
+}
+.title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 2rem;
+    font-size: 40px; 
+    color: rgb(109, 109, 109);
+    text-align: center;
+    text-shadow: -6px 3px 5px var(--gray);
 }
 .social-media {
     margin-top: 1rem;
@@ -38,18 +51,18 @@ h2 {
 }
 .social-media a {
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     font-size: 24px;
     padding: 1rem 4rem;
-    border: solid 2px #fff;
+    border: solid 2px var(--white);
     display: flex;
     align-items: center;
     justify-content: center;
     transition: .5s cubic-bezier(0.55, 0.025, 0.675, 0.97);
 }
 .social-media a:hover{
-    background-color: #fff;
-    color: #2E1C2B;
+    background-color: var(--white);
+    color: var(--black-white);
 }
 
 /* Animação background */
@@ -86,7 +99,7 @@ h2 {
 .checkbox .trace {
     width: 50px;
     height: 2px;
-    background-color: #FFF;
+    background-color: var(--white);
     position: absolute;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
@@ -116,7 +129,7 @@ h2 {
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    box-shadow: 0px 0px 0px 0px white;
+    box-shadow: 0px 0px 0px 0px var(--white);
     z-index: -1;
     transition: 400ms ease-in-out 0s;
 }
@@ -139,7 +152,7 @@ h2 {
 }
 .menu-items ul li a {
     margin: 10px 0;
-    color: #2E1C2B;
+    color: var(--black-white);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -153,7 +166,7 @@ h2 {
 /* Animação do Menu Hamburguer */
 #toogle:checked + .checkbox .trace:nth-child(1){
     transform: rotate(45deg);
-    background-color: #2E1C2B;
+    background-color: var(--black-white);
     top: 47px;
 }
 
@@ -165,11 +178,11 @@ h2 {
 }
 #toogle:checked + .checkbox .trace:nth-child(3){
     transform: rotate(-45deg);
-    background-color: #2E1C2B;
+    background-color: var(--black-white);
     top: 48px;
 }
 #toogle:checked + .checkbox {
-    background-color: white;
+    background-color: var(--white);
 }
 #toogle:checked ~ .menu {
     box-shadow: 0px 0px 0px 90vw white;
@@ -183,12 +196,11 @@ h2 {
 /* Card */
 
 .box {
-    width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex-direction: row;
 }
 .box-card {
     display: flex;
@@ -201,39 +213,96 @@ h2 {
     height: 15rem;
     background: url(image.jpg) no-repeat;
     border-radius: 50%;
-    border: 5px solid #ccc;
+    border: 5px solid var(--gray);
 }
-.box-card .card-text {  
+.box-card .card-text p {  
     margin: 2rem;
-    font-size: 16px; 
+    font-size: 16px;
     font-family: sans-serif;
     color: rgb(109, 109, 109);
+    word-break: break-word;
+    letter-spacing: 1px;
 }
+.box-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+    height: 100vh;
+
+}
+.box-project .card {
+    height: 11.3rem;
+    width: 20rem;
+    border: 2px solid var(--gray);
+    margin: 1.5rem;
+    border-radius: 1%;
+    padding: 1px;
+    background-color: var(--gray);
+}
+.box-project .card .projectImage1 {
+    background-image: url(projeto1.png);
+    width: 20rem;
+    height: 11.3rem;
+}
+.box-project .card .projectImage2 {
+    background-image: url(projeto2.png);
+    width: 20rem;
+    height: 11.3rem;
+}
+.box-project .card .projectImage3 {
+    background-image: url(projeto3.png);
+    width: 20rem;
+    height: 11.3rem;
+}
+.box-project .card span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 11.5rem;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    background-color: #050404b3;
+    text-decoration: underline;
+    text-shadow: 1px 2px 15px;
+    color: var(--white);
+    width: 20rem;
+    height: 11.5rem;
+    opacity: 0;
+}
+.box-project .card span:hover {
+    opacity: 1;
+    transition: 500ms ease-in-out 0s;
+}
+
 .habilidades {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     height: 100vh;
+    flex-direction: column;
 }
 .habilidades .banner {
     font-size: 30px;
     width: 27rem;
     height: 25rem;
+    padding-right: 5rem
 }
 .habilidades p {
     font-size: 14px;
     letter-spacing: 1px;
     color: rgb(109, 109, 109);
     font-family: sans-serif;
+    word-break: break-word;
 }
 
 /* Footer */
 .footer {
     width: 100%;
     height: 100px;
-    background-color: #2E1C2B;
-    color: #FFF;
+    background-color: var(--black-white);
+    color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;

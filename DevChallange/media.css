@@ -1,3 +1,13 @@
+/* ===== Variáveis de Cores ===== */
+:root {
+    --white: #FFF;
+    --gray: #CCC;
+    --black: #050404;
+    --black-white: #2E1C2B;
+    --dark-blue: #110342;
+    --blue: #0863ad;
+}
+
 @media (max-width: 768px) {
     body {
         font-size: .5rem;
@@ -6,6 +16,8 @@
         display: flex;
         justify-content: center;
     }
+
+    /* Adaptação de Textos e Quebra de Container's */
     .social-media {
         flex-direction: column;
     }
@@ -15,4 +27,26 @@
     .box-card {
         flex-direction: column;
     }
-}
+    .box-card .card-text p {
+        font-size: 14px;
+    }
+    .box-project {
+        flex-direction: column;
+    }
+    .habilidades .banner {
+        padding-right: 0;
+        width: 20rem;
+    }
+    .habilidades p {
+        text-align: justify;
+        padding: 0 2rem 2rem 2rem;
+        font-size: 14px;
+    }
+    }
+
+    /* Alinhamento do Interior Menu Mobile */
+    @media (max-width: 600px) {
+        #toogle:checked ~ .menu {
+            box-shadow: 0px 0px 0px 180vw var(--white);
+        }
+    }

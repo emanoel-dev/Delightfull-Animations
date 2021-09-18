@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--- Adaptação Web & Mobile padrão-->
+    <meta name="theme-color" content="#110342"> <!--- Estilização Cor da barra de pesquisa Mobile Chrome -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#110342"> <!--- Estilização Cor da barra de pesquisa iOs Safari-->
     <title>DevChallange</title>
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
+    <script src="main.js"></script>
 </head>
 <body>
     <header class="head">
@@ -29,7 +32,10 @@
                                 <a href="#sobre">Sobre</a>
                             </li>
                             <li>
-                                <a href="">Projetos</a>
+                                <a href="#projetos">Projetos</a>
+                            </li>
+                            <li>
+                                <a href="#habilidades">Experiências</a>
                             </li>
                         </ul>
                     </nav> 
@@ -46,19 +52,40 @@
             </div>
         
     </header>
+    
     <div class="box">
+        <h3 class="title">Sobre Mim</h3>
         <div class="box-card">
-
             <div class="image"></div>
-            <div class="card-text" id="sobre">
-             Olá, me chamo Emanoel Silva, tenho 17 anos e moro no estado de São Paulo, Zona Leste. <br> Atualmente sou estudante
+            <div class="card-text" id="sobre"> 
+             <p>
+                Olá, me chamo Emanoel Silva, tenho 17 anos e moro no estado de São Paulo, Zona Leste. <br> Atualmente sou estudante
              da área de Programação e Desenvolvimento Web focado no <br> 
              Front-End e Aplicativos Mobile. Você pode conhecer minhas habilidades com as tecnologias de <br>
              desenvolvimento logo abaixo.
+             </p>
 
             </div>
         </div>
     </div>
+
+    <h4 class="title" id="projetos">Alguns Projetos</h4>
+    <div class="box-project">
+        <div class="card">
+            <div class="projectImage1"></div>
+            <span>Tela de Login</span>
+        </div>
+        <div class="card">
+            <div class="projectImage2"></div>
+            <span>Dev Finance</span>
+        </div>
+        <div class="card">
+            <div class="projectImage3"></div>
+            <span>Site Vereador</span>
+        </div>
+    </div>
+
+    <h5 class="title" id="habilidades">Minhas Experiências</h5>
     <div class="habilidades">
         <img src="banner.svg" alt="" class="banner">
         <p>
