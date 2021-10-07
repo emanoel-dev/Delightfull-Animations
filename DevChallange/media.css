@@ -8,7 +8,7 @@
     --blue: #0863ad;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1080px) {
     body {
         font-size: .5rem;
     }
@@ -18,6 +18,12 @@
     }
 
     /* Adaptação de Textos e Quebra de Container's */
+    .title {
+        margin: 5rem;
+    }
+    #habilidades {
+        margin-bottom: 3rem;
+    }
     .social-media {
         flex-direction: column;
     }
@@ -38,15 +44,39 @@
         width: 20rem;
     }
     .habilidades p {
-        text-align: justify;
+        text-align: start;
         padding: 0 2rem 2rem 2rem;
         font-size: 14px;
+    }
+    .footer {
+        margin-top: 5rem;
     }
     }
 
     /* Alinhamento do Interior Menu Mobile */
     @media (max-width: 600px) {
         #toogle:checked ~ .menu {
-            box-shadow: 0px 0px 0px 180vw var(--white);
+            box-shadow: 0px 0px 0px 110vw var(--white);
+        }
+    }
+    @media (max-width: 540px) {
+        #toogle:checked ~ .menu {
+            box-shadow: 0px 0px 0px 150vw var(--white);
+        }
+        .box-project .card {
+            width: 15rem;
+        }
+        .box-project .card .projectImage1 {
+            width: 15rem;
+        }
+        .box-project .card .projectImage2 {
+            width: 15rem;
+        }
+        .box-project .card .projectImage3 {
+            width: 15rem;
+        }
+        .box-project .card span {
+            width: 15rem;
+            font-size: 4em;
         }
     }

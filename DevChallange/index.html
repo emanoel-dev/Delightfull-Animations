@@ -7,24 +7,22 @@
     <meta name="theme-color" content="#110342"> <!--- Estilização Cor da barra de pesquisa Mobile Chrome -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#110342"> <!--- Estilização Cor da barra de pesquisa iOs Safari-->
     <title>DevChallange</title>
-
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
-    <script src="main.js"></script>
 </head>
 <body>
     <header class="head">
         <div class="checkbox-container">
             <div class="checkbox-wrapper">
-                <input type="checkbox" id="toogle">
+                <input type="checkbox" id="toogle" onclick="btnOpen();">
                 <label class="checkbox" for="toogle">
                     <div class="trace"></div>
                     <div class="trace"></div>
                     <div class="trace"></div>
                 </label>
-                 <div class="menu"></div>
-                    <nav class="menu-items">
-                        <ul>
+                <div class="menu" id="menu"></div>
+                    <nav class="menu-items" id="nav">
+                        <ul onclick="btnOpen();">
                             <li>
                                 <a href="#">Home</a>
                             </li>
@@ -41,23 +39,18 @@
                     </nav> 
             </div>
         </div>
-
             <h1>Emanoel Silva</h1>
             <h2>Desenvolvedor Front-End Jr</h2>
             <div class="social-media">
-
                 <a href="https://github.com/emanoel-dev" target="_blank">GitHub</a>
                 <a href="https://discord.gg/H2s3AGtn2v" target="_blank">Discord</a>
-
             </div>
-        
     </header>
-    
     <div class="box">
-        <h3 class="title">Sobre Mim</h3>
+        <h3 class="title" id="sobre">Sobre Mim</h3>
         <div class="box-card">
             <div class="image"></div>
-            <div class="card-text" id="sobre"> 
+            <div class="card-text"> 
              <p>
                 Olá, me chamo Emanoel Silva, tenho 17 anos e moro no estado de São Paulo, Zona Leste. <br> Atualmente sou estudante
              da área de Programação e Desenvolvimento Web focado no <br> 
@@ -68,7 +61,6 @@
             </div>
         </div>
     </div>
-
     <h4 class="title" id="projetos">Alguns Projetos</h4>
     <div class="box-project">
         <div class="card">
@@ -84,7 +76,6 @@
             <span>Site Vereador</span>
         </div>
     </div>
-
     <h5 class="title" id="habilidades">Minhas Experiências</h5>
     <div class="habilidades">
         <img src="banner.svg" alt="" class="banner">
@@ -98,7 +89,7 @@
             Em aprendizado, com experiência de 2 meses.
         </p>
     </div>
-
     <footer class="footer">Feito por Emanoel Silva</footer>
+    <script src="main.js"></script>
 </body>
 </html>
