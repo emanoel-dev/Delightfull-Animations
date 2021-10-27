@@ -35,6 +35,7 @@
     }
     .box-card .card-text p {
         font-size: 14px;
+        width: 80vw;
     }
     .box-project {
         flex-direction: column;
@@ -42,14 +43,18 @@
     .habilidades .banner {
         padding-right: 0;
         width: 20rem;
+        height: 20rem;
+    }
+    .habilidades {
+        height: 50rem;
     }
     .habilidades p {
-        text-align: start;
-        padding: 0 2rem 2rem 2rem;
         font-size: 14px;
+        width: 80vw;
     }
     .footer {
-        margin-top: 5rem;
+        height: 15vh;
+        font-size: 18px;
     }
     }
 
@@ -77,6 +82,10 @@
         }
         .box-project .card span {
             width: 15rem;
-            font-size: 4em;
+            font-size: 2em;
+        }
+        .box-card .image {
+            width: 10rem;
+            height: 10rem;
         }
     }

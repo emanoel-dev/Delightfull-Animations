@@ -232,6 +232,7 @@ h2 {
     color: rgb(109, 109, 109);
     word-break: break-word;
     letter-spacing: 1px;
+    width: 55vw;
 }
 .box-project {
     display: flex;
