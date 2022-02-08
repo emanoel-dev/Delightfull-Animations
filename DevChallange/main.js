@@ -6,6 +6,7 @@ function btnOpen() {
     nav.classList.toggle('menuOpen')
 
 } else {
-    return
+    void();
 }
 };
+

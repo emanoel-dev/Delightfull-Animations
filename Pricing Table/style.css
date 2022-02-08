@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box
+}
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+    --white: #ffffff;
+    --black: #1E2338;
+  }
+        /* Topo do Site */
+header {
+    width: 100%;
+    height: 28.125rem;
+    background-color: var(--blue);
+    margin: 0;
+}
+.header-title {
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 6.25rem;
+}
+.header-paragraph {
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 1.125rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 7.25rem;
+}
+        /* Card's de Preços */
+.card {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.card .card-content {
+    background-color: var(--white);
+    width: 22.188rem;
+    height: 29.375rem;
+    position: relative;
+    bottom: 8.375rem;
+    border-radius: 5px;
+}
+.card .plan-basic {
+    margin: -15px 15px 0px 15px;
+}
+.card .title-card {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    width: 3.188rem;
+    height: 1.563rem;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.card .basic-title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    width: 3.188rem;
+    height: 1.563rem;
+    color: var(--blue);
+
+}
+.card .card-value {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 2.25rem;
+    padding: 0 0 0 30px;
+}
+.card .card-month {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 1.125rem;
+    color: var(--gray);
+}
+.card .card-text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 0.875rem;
+    color: var(--gray);
+    padding: 1.875rem;
+}
+.card .top-card-basic {
+    width: 22.188rem;
+    height: 4.75rem;
+    background-color: var(--yellow);
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+.card ul {
+    height: 12.438rem;
+}
+.card ul li {
+    list-style: inside url("./assets/check.svg");
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    font-style: normal;
+    line-height: 19px;
+    color: var(--gray);
+    margin: 20px 0px 0px 30px;
+    display: flex;
+    align-items: center;
+}
+.card .card-button {
+    width: 16.813rem;
+    height: 3.063rem;
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+.card .card-button:hover {
+    background-color: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+}
+.card .active {
+    background-color: var(--blue);
+    color: var(--white);
+}

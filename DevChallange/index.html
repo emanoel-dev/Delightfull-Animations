@@ -7,22 +7,24 @@
     <meta name="theme-color" content="#110342"> <!--- Estilização Cor da barra de pesquisa Mobile Chrome -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#110342"> <!--- Estilização Cor da barra de pesquisa iOs Safari-->
     <title>DevChallange</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./media.css">
 </head>
 <body>
     <header class="head">
         <div class="checkbox-container">
             <div class="checkbox-wrapper">
-                <input type="checkbox" id="toogle" onclick="btnOpen();">
+
+                <input type="button" id="toogle" onclick="btnOpen();">
                 <label class="checkbox" for="toogle">
                     <div class="trace"></div>
                     <div class="trace"></div>
                     <div class="trace"></div>
                 </label>
+
                 <div class="menu" id="menu"></div>
                     <nav class="menu-items" id="nav">
-                        <ul onclick="btnOpen();">
+                        <ul id="closeMenu">
                             <li>
                                 <a href="#">Home</a>
                             </li>
@@ -49,7 +51,7 @@
     <div class="box">
         <h3 class="title" id="sobre">Sobre Mim</h3>
         <div class="box-card">
-            <img src="image.jpg" alt="Foto" class="image"/>
+            <img src="./images/image.jpg" alt="Foto" class="image"/>
             <div class="card-text"> 
              <p>
                 Olá, me chamo Emanoel Silva, tenho 17 anos e moro no estado de São Paulo, Zona Leste. <br> Atualmente sou estudante
@@ -64,21 +66,21 @@
     <h4 class="title" id="projetos">Alguns Projetos</h4>
     <div class="box-project">
         <div class="card">
-            <div class="projectImage1"></div>
+            <div class="projectImage"><img src="./images/projeto1.png" alt="Projeto 1"></div>
             <span>Tela de Login</span>
         </div>
         <div class="card">
-            <div class="projectImage2"></div>
+            <div class="projectImage"><img src="./images/projeto2.png" alt="Projeto 2"><</div>
             <span>Dev Finance</span>
         </div>
         <div class="card">
-            <div class="projectImage3"></div>
+            <div class="projectImage"><img src="./images/projeto3.png" alt="Projeto 3"><</div>
             <span>Site Vereador</span>
         </div>
     </div>
     <h5 class="title" id="habilidades">Minhas Experiências</h5>
     <div class="habilidades">
-        <img src="banner.svg" alt="" class="banner">
+        <img src="./images/banner.svg" alt="" class="banner">
         <p>
             HTML5: Utilizado para a marcação e estruturação de sites, experiência de 2 anos.<br>
             CSS3 e Bootstrap4: Utilizados para a estilização e responsividade de sites, experiência de 1 ano.
@@ -90,6 +92,6 @@
         </p>
     </div>
     <footer class="footer">Feito por Emanoel Silva</footer>
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>
