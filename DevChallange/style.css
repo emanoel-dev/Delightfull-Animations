@@ -63,7 +63,7 @@ h2 {
     color: var(--black-white);
 }
 
-/* Animação background */
+/* AnimaÃ§Ã£o background */
 @keyframes backgroundTransition {
     0% {
         background-position: 0% 80%;
@@ -91,31 +91,37 @@ h2 {
     display: flex;
     justify-content: center;
     cursor: pointer;
-    z-index: 9999;
     transition: 400ms ease-in-out 0s;
+    z-index: 999;
 }
 .checkbox .trace {
     width: 50px;
     height: 2px;
-    background-color: var(--white);
     position: absolute;
     border-radius: 4px;
     transition: 0.5s ease-in-out;
 }
-.checkbox .trace:nth-child(1){
+.traceChild1 {
     top: 26px;
     transform: rotate(0);
+    background-color: var(--white);
 }
-.checkbox .trace:nth-child(2){
+.traceChild2 {
     top: 46px;
     transform: rotate(0);
+    background-color: var(--white);
 }
-.checkbox .trace:nth-child(3){
+.traceChild3 {
     top: 66px;
     transform: rotate(0);
+    background-color: var(--white);
 }
 
-/* Estruturação do Menu */
+#toogle {
+    display: none;
+}
+
+/* EstruturaÃ§Ã£o do Menu */
 .menu {
     position: absolute;
     top: 28px;
@@ -152,159 +158,35 @@ h2 {
     text-transform: uppercase;
     letter-spacing: 4px;
     font-size: 40px;
-    
 }
 
-
-
-/* Animação do Menu Hamburguer
-#toogle:checked + .checkbox .trace:nth-child(1){
-    transform: rotate(45deg);
+/* AnimaÃ§Ã£o do Menu Hamburguer */
+.trace1 {
     background-color: var(--black-white);
+    transform: rotate(45deg);
     top: 47px;
 }
-
-#toogle:checked + .checkbox .trace:nth-child(2){
+.trace2 {
     transform: translateX(-100px);
     width: 30px;
     visibility: hidden;
     opacity: 0;
+    top: 50px
 }
-#toogle:checked + .checkbox .trace:nth-child(3){
-    transform: rotate(-45deg);
+.trace3 {
     background-color: var(--black-white);
+    transform: rotate(-45deg);
     top: 48px;
 }
-#toogle:checked + .checkbox {
-    background-color: var(--white);
-}
-
-#toogle:checked ~ .menu {
-    box-shadow: 0px 0px 0px 90vw white;
-    z-index: 1;
-    display: block;
-}
-#toogle:checked ~ .menu-items {
-    visibility: visible;
-    opacity: 1;
-}*/
-
-
 
 /* Abertura Menu */
 .menuBgOpen {
     box-shadow: 0px 0px 0px 90vw var(--white);
+    background-color: var(--white);
     z-index: 1;
     display: block;
 }
 .menuOpen {
     visibility: visible;
     opacity: 1;
-}
-
-
-/* Card */
-.box {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.box-card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-.box-card .image {
-    width: 15rem;
-    height: 15rem;
-    background: url(image.jpg) no-repeat;
-    border-radius: 50%;
-    border: 5px solid var(--gray);
-}
-.box-card .card-text p {  
-    margin: 2rem;
-    font-size: 16px;
-    font-family: sans-serif;
-    color: rgb(109, 109, 109);
-    word-break: break-word;
-    letter-spacing: 1px;
-    width: 55vw;
-}
-.box-project {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row;
-    height: 100vh;
-
-}
-.box-project .card {
-    height: 11.3rem;
-    width: 20rem;
-    margin: 1.5rem;
-    border-radius: 1%;
-    background-color: var(--gray);
-    border: 5px solid var(--gray);
-    border-radius: 10px;;
-}
-.box-project .card .projectImage {
-    width: 20rem;
-    height: 11.4rem;
-    border-radius: 10px;
-}
-.box-project .card span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    bottom: 11.5rem;
-    font-size: 2rem;
-    letter-spacing: 2px;
-    background-color: #050404b3;
-    text-decoration: underline;
-    text-shadow: 1px 2px 15px;
-    color: var(--white);
-    width: 20rem;
-    height: 11.5rem;
-    opacity: 1;
-    transition: 500ms ease-in-out 0s;
-    border-radius: 6px;
-}
-
-.habilidades {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-}
-.habilidades .banner {
-    font-size: 30px;
-    width: 27rem;
-    height: 25rem;
-    padding-right: 5rem
-}
-.habilidades p {
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: rgb(109, 109, 109);
-    font-family: sans-serif;
-    word-break: break-word;
-    padding-bottom: 5rem;
-}
-
-/* Footer */
-.footer {
-    width: 100%;
-    height: 8rem;
-    background-color: #212D40;
-    color: var(--white);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 25px;
-    text-transform: uppercase;
 }

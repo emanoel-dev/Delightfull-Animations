@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--- Adaptação Web & Mobile padrão-->
     <meta name="theme-color" content="#110342"> <!--- Estilização Cor da barra de pesquisa Mobile Chrome -->
     <meta name="apple-mobile-web-app-status-bar-style" content="#110342"> <!--- Estilização Cor da barra de pesquisa iOs Safari-->
-    <title>DevChallange</title>
+    <title>Delightful Animations - DevChallange</title>
+
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./media.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <header class="head">
         <div class="checkbox-container">
             <div class="checkbox-wrapper">
-
-                <input type="button" id="toogle" onclick="btnOpen();">
+               <input type="checkbox" id="toogle" onclick="btnOpen();">
                 <label class="checkbox" for="toogle">
                     <div class="trace"></div>
                     <div class="trace"></div>
@@ -24,74 +25,27 @@
 
                 <div class="menu" id="menu"></div>
                     <nav class="menu-items" id="nav">
-                        <ul id="closeMenu">
-                            <li>
-                                <a href="#">Home</a>
-                            </li>
-                            <li>
+                        <ul>
+                            <li> 
                                 <a href="#sobre">Sobre</a>
                             </li>
                             <li>
-                                <a href="#projetos">Projetos</a>
+                                <a href="#projetos">Contato</a>
                             </li>
                             <li>
                                 <a href="#habilidades">Experiências</a>
                             </li>
                         </ul>
-                    </nav> 
+                    </nav>
             </div>
         </div>
             <h1>Emanoel Silva</h1>
             <h2>Desenvolvedor Front-End Jr</h2>
             <div class="social-media">
                 <a href="https://github.com/emanoel-dev" target="_blank">GitHub</a>
-                <a href="https://discord.gg/H2s3AGtn2v" target="_blank">Discord</a>
+                <a href="" target="_blank">Portfólio</a>
             </div>
     </header>
-    <div class="box">
-        <h3 class="title" id="sobre">Sobre Mim</h3>
-        <div class="box-card">
-            <img src="./images/image.jpg" alt="Foto" class="image"/>
-            <div class="card-text"> 
-             <p>
-                Olá, me chamo Emanoel Silva, tenho 17 anos e moro no estado de São Paulo, Zona Leste. <br> Atualmente sou estudante
-             da área de Programação e Desenvolvimento Web focado no <br> 
-             Front-End e App Mobile. Você pode conhecer alguns dos meus projetos e minhas habilidades
-             com as tecnologias de desenvolvimento logo abaixo.
-             </p>
-
-            </div>
-        </div>
-    </div>
-    <h4 class="title" id="projetos">Alguns Projetos</h4>
-    <div class="box-project">
-        <div class="card">
-            <div class="projectImage"><img src="./images/projeto1.png" alt="Projeto 1"></div>
-            <span>Tela de Login</span>
-        </div>
-        <div class="card">
-            <div class="projectImage"><img src="./images/projeto2.png" alt="Projeto 2"><</div>
-            <span>Dev Finance</span>
-        </div>
-        <div class="card">
-            <div class="projectImage"><img src="./images/projeto3.png" alt="Projeto 3"><</div>
-            <span>Site Vereador</span>
-        </div>
-    </div>
-    <h5 class="title" id="habilidades">Minhas Experiências</h5>
-    <div class="habilidades">
-        <img src="./images/banner.svg" alt="" class="banner">
-        <p>
-            HTML5: Utilizado para a marcação e estruturação de sites, experiência de 2 anos.<br>
-            CSS3 e Bootstrap4: Utilizados para a estilização e responsividade de sites, experiência de 1 ano.
-            <br><br>
-            Javascript: Linguagem de programação responsável, muitas vezes, pela interação do site com o usuário.<br>
-            Em aprendizado, com experiência de 8 meses.<br><br>
-            ReactNative: Uma biblioteca Javascript criada para desenvolver aplicativos nativos em Android e iOS.<br>
-            Em aprendizado, com experiência de 2 meses.
-        </p>
-    </div>
-    <footer class="footer">Feito por Emanoel Silva</footer>
     <script src="./main.js"></script>
 </body>
 </html>
